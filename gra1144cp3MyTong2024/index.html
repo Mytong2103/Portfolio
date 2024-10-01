@@ -3,24 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <title>Insidious 1 | My Tong, 2024</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 	<style>
 	body{ margin: 0;
-			background-color: darkred;}
-	wrapper{margin: 0;
-		width: 1200px;
-		height: auto;
+		background-color: darkred;
+		font-family:sans-serif;}
+	wrapper{
+		width: 1366px;
 		display:block;
-		margin: auto;}
-	p{color:white;}
-	.background{transform: scale(100%);
-		display: inline-block;
-		vertical-align: middle;
-		transform: translateY(-400px);
-		transform:scale(102%)}
-	.boy{	
-		transform: translate(200px);
+		margin: auto;
+		position: relative;}
+		p{
+		color:white;
+		}
+	.boy{position: absolute;
+		left:170px;
+		top:-100px;
+		height:990px;
+		z-index: 9
+		
+	}
+	.background{position: absolute;
+		left:0;
+		top:100px;
+        width:1100px;
+	    height:790px;
 	
 		}
+		h1{color:white;
+			font-size: 100px;
+		position:absolute;
+		left:200px;
+		top:310px;
+	    z-index: 10;
+		 font-family: "Indie Flower", cursive;}
+		h3{color:white;
+			margin: 200px 50% 50px 30%;
+		position: absolute;
+			z-index: 15;
+		left:-210px;
+		top:300px;
+		font-weight:  100;
+		font }
+		main .background{
+			width: 100%;
+		}
+		iframe{margin-bottom: 900px;
+			transform: translateY(900px);}
+	
+.vertical-menu {position: absolute;
+	z-index: 15;
+	left: 1227px;
+	top: 100px;
+  width: 100px;
+}
+
+.vertical-menu a {
+  background-color: rgba(120,7,9,0.85);
+   	
+  color: white;
+  display: block;
+  padding: 70px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: darkred;
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+		.summary{position: absolute;
+			margin: 200px 5% 50px 50%;
+			top: 725px;
+			left: 150px;
+			
+			
+		}
+		
+		
 		
 		
 	</style>
@@ -28,15 +92,30 @@
 
 <body>
 <wrapper>
-	<br><br><br><br><br><br><br><br><br>
-	<img src="insidiousboy.png" class="boy">
+<main>
+	<div class="vertical-menu">
+  <a href="#" class="active">Home</a>
+  <a href="#">Trailer</a>
+  <a href="#">Actors</a>
+  <a href="#">Gallery</a>
+  <a href="#">About</a>
+</div>
+  <h1> INSIDIOUS</h1>
+ 
+  <h3> Parents (Patrick Wilson, Rose Byrne) take drastic measures when it seems their new home is haunted and their comatose son is possessed by a malevolent entity.</h3>
 	<img src="InsidiousBG.jpg" class="background">
-	<header>
-	</header>
+    <img src="insidiousboy.png" class="boy">
+		<p class="summary">Married couple Josh and Renai Lambert have recently moved in to a new home with their sons, Dalton and Foster, and their infant daughter Kali. One evening, Dalton sneaks into the attic, where he encounters a mysterious entity after falling from a rickety ladder and hitting his head. The next day, he inexplicably slips into a coma.Three months later, with no signs of improvement, Renai and Josh take Dalton back home. The family starts to experience frightening paranormal events, including strange noises and their home security alarm going off on its own repeatedly. Foster also claims he has seen the comatose Dalton walking around the house and Renai finds a bloody handprint on Dalton's bed. Later, Renai begins seeing a fiendish, long-haired apparition that tries to attack her. The Lamberts decide to move, with Renai believing the house to be haunted.However, the supernatural activity continues in their new home when Renai sees the ghost of a young child dressed in period attire. Josh's mother Lorraine arrives and explains she had a nightmare about a demon with a red face in Dalton's bedroom. She later sees the same demon behind Josh, and Dalton's bedroom is ransacked by unseen forces. Lorraine calls psychic Elise Rainier and her paranormal investigators Specs and Tucker.In Dalton's bedroom, Elise sees a vision of the red-faced demon.</p>
+	</main>
+	<iframe width="800" height="450" src="https://www.youtube.com/embed/zuZnRUcoWos?si=z4tdFVPQ8GP1v3lS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+   
+    <header>
+    </header>
 	<footer>
-	<p>© 2024, My Tong.</p>
+	<p>&copy;2024, My Tong.</p>
 	<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
 	</footer>
-	</wrapper>
+</wrapper>
 </body>
 </html>
