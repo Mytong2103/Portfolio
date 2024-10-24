@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: #ccc;
+    color: #F9F8B3;
+}
+wrapper {
+    margin: auto;
+    width: 1366px;
+    display: block;
+    background-color: white;
+}
+nav {
+    background-color: black;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul a li {
+    display: inline-block;
+    padding: 10px 44.95px;
+    color: #F9F8B3;
+    background-color: black;
+    font-family: sans-serif;
+}
+ul a li:hover {
+	color:rgba(243,230,161,0.80);}
+main {
+    height: 650px;
+    background-size: contain;
+	background-color: #414130;
+	
+}
+.charlie1{position: absolute;
+		width: 1000px;
+		top: 280px;}
+footer {
+    background-color: black;
+    color: #F9F8B3;
+    padding: 10px 20px;
+}
+header {
+    color: white;
+    padding: 20px;
+    background-color: black;
+}
+h1 {
+    color: #F9F8B3;
+	font-family: "Playwrite GB S", cursive ;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 40px;
+}
+.name {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    
+    text-align: center;
+}
+img{
+    position: relative;
+    bottom: 50.5px;
+}
+.home{position:relative;
+	z-index: 5;
+	left: 900px;
+	top: 150px;
+	border: 1px solid #F9F8B3;
+	font-size: 30px;
+	display: inline-block;
+	padding: 0px 30px 0px 30px;
+	text-tranform: uppercase;
+	transition: 0.5s;
+	
+	}
+.home:hover{ color:rgba(243,230,161,0.80);
+			border-color:rgba(243,230,161,0.80);
+		}
+.tour{position: absolute;
+		left:1000px;
+		top: 300px;
+		text-transform:uppercase;}
+.socialicons{display: flex;
+	z-index:5;
+	justify-content: center;
+	
+}
+.socialicons a{
+	text-decoration: none;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color:rgba(243,230,161,0.53)}
+.socialicons a i{
+	font-size: 1.5em;
+	color:#F9F8B3;
+	opacity: 0.9;
+}
+.socialicons a:hover {
+	background-color: #111;
+	transition: 0.5s;
+ }
+.tours {
+	background-color:#414130;
+	position:absolute;
+	z-index: 5;
+	left:200px;
+    top: -200px ;
+}
