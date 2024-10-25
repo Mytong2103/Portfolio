@@ -2,7 +2,7 @@
 body {
     margin: 0;
     background-color: #ccc;
-    color: #F9F8B3;
+    color: #F9F8B3 ;
 }
 wrapper {
     margin: auto;
@@ -28,10 +28,11 @@ ul a li:hover {
 	color:rgba(243,230,161,0.80);}
 main {
     height: 650px;
-    background-size: contain;
+    background-size:contain;
 	background-color: #414130;
-	
 }
+.tourmain{ height: 2300px;}
+
 .charlie1{position: absolute;
 		width: 1000px;
 		top: 280px;}
@@ -79,10 +80,14 @@ img{
 .home:hover{ color:rgba(243,230,161,0.80);
 			border-color:rgba(243,230,161,0.80);
 		}
-.tour{position: absolute;
-		left:1000px;
-		top: 300px;
-		text-transform:uppercase;}
+.tour{position: relative;
+		top: 100px;
+		text-transform:uppercase;
+		font-size: 50px;
+		padding: 0px 0px 0px 800px;
+		
+		
+}
 .socialicons{display: flex;
 	z-index:5;
 	justify-content: center;
@@ -103,10 +108,148 @@ img{
 	background-color: #111;
 	transition: 0.5s;
  }
-.tours {
-	background-color:#414130;
-	position:absolute;
-	z-index: 5;
-	left:200px;
-    top: -200px ;
+h2,h3{
+    position: relative;
+    padding: 0px 0px 0px 800px;
+	top: 110px;
 }
+h3{ color: #E9295D
+	;}
+h2{ font-size: 40px}
+.box{
+	color: #F9F8B3;
+	top:70px;
+	display:inline-block;
+	padding: 5px 100px 5px 100px;
+	left: 800px;
+	border: 1px solid #F9F8B3;
+}
+.box:hover{color:rgba(243,230,161,0.80);
+			border-color:rgba(243,230,161,0.80);}
+.news {
+	padding-top: 20px;
+	font-size: 39px;
+	text-align: center;
+	letter-spacing: 3px;
+	
+}
+.news2{position: relative;
+	padding: 20px 30px 100px 40px  ;
+    height: 400px;
+	width: 374px;
+	background-color:rgba(0,0,0,0.41);
+	display: inline-block;
+	margin:2px
+
+	
+}
+.news1{position: relative;
+	padding: 20px 30px 100px 40px  ;
+    height: 400px;
+	width: 374px;
+	background-color:rgba(0,0,0,0.41);
+	display: inline-block;
+	margin: 5px;
+
+}
+.news3{position: relative;
+	padding: 20px 30px 100px 40px  ;
+    height: 400px;
+	width: 374px;
+	background-color:rgba(0,0,0,0.41);
+	display: inline-block;
+	margin: 2.5px;
+	
+}
+
+.img1 {
+	display: inline-block;
+	bottom: auto;
+	left: 5px;
+}
+.img2 {
+	display: inline-block;
+	bottom: auto;
+	left: 5px;
+}
+.img3 {
+	display: inline-block;
+	bottom: auto;
+	left: 5px;
+}
+button{position: absolute;
+	bottom: 100px;
+	
+}
+button:hover{background-color:rgba(255,255,255,0.00);
+	color: white;
+	
+}
+.music{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+}
+.songs1{position:relative;
+	padding: 20px 30px 100px 40px  ;
+	display: inline-block;	
+	text-align: center;
+	background-color:#EF3523;
+	left: 110px;
+	color: black;
+	top: 50px;}
+.song1{
+	width: 220px;
+	border-radius: 50%;
+	border:8px solid;
+} 
+.songs2{position:relative;
+	padding: 20px 30px 100px 40px  ;
+	display: inline-block;	
+	text-align: center;
+	left: 220px;
+	background-color: #F6E614;
+	color: black;
+	top: 50px;}
+.song2{
+	width: 220px;
+	border-radius: 50%;
+	border:8px solid #F9F8B3 ;}
+.songs3{position:relative;
+	padding: 20px 30px 100px 40px  ;
+	display: inline-block;	
+	text-align: center;
+	left: 320px;
+	background-color: #3097BF;
+	top: 50px;
+}
+	
+
+.song3{
+	width: 220px;
+	border-radius: 50%;
+	border:8px solid #fff;}
+
+.video{text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+}
+.video2  {
+	position: relative;
+	left: 800px;
+	bottom: 250px;
+}
+.video3  {
+	position: relative;
+	left: 800px;
+	bottom: 250px;
+}
+.video4  {
+	position: relative;
+	left: 800px;
+	bottom: 250px;
+}
+.main-video{position: relative;
+			top: 250px; 
+			left: 170px;}
+.videos{ height: 900px;}
