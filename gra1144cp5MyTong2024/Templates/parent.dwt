@@ -30,8 +30,9 @@
       <a href="../photos.html"><li>Photos</li></a>
       <a href="../email.html"><li>Email</li></a>
       <a href="../merch.html"><li>Merch</li></a>
-      <a href="../blogs.html"><li>Blogs</li></a>
-      <a href="../privacy.html"><li>Privacy</li></a>
+	  <a href="../blogs.html"><li>Blogs</li></a> 
+	  <a href="../privacy.html"><li>Privacy</li></a> 
+		
     </ul>
   </nav>
   <!-- TemplateBeginEditable name="EditRegion1" -->
