@@ -13,15 +13,13 @@ body {
     background-image: url(background.jpeg);
 }
 header {
-    background-color: transparent;
-    /* [disabled]font-size: 50px; */
+    background-color: rgba(255,255,255,1.00);
 }
 wrapper {
     width: 1800px;
     margin: auto;
     display: block;
-    /* [disabled]background-color: rgba(0,0,0,0.50); */
-    /* [disabled]position: absolute; */
+    background-color: rgba(0,0,0,0.50);
 }
 footer {
     width: 100%;
@@ -32,20 +30,12 @@ footer {
     color: rgba(255,255,255,1.00);
 }
 .top {
-    background-color: transparent;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-    position: relative;
-    left: 600px;
-    width: 0px;
+    background-color: rgba(255,255,255,0.63);
 }
 .top h1 {
     display: inline-block;
     position: absolute;
     top: 10px;
-    left: 190px;
 }
 #Tabs1 ul li img {
     width: auto;
@@ -59,26 +49,18 @@ footer {
     background-color: transparent;
     border: none;
     background-image: none;
-    position: relative;
-    left: 20px;
 }
-#Tabs1   {
-    background-color: rgba(34,45,77,0.39);
+#Tabs1 {
+    background-color: transparent;
     border: none;
     background-image: none;
-    position: absolute;
-    top: 200px;
-    text-align: center;
-    /* [disabled]background-size: cover; */
-    width: 1800px;
 }
-#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5    {
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
     background-color: rgba(34,45,77,0.39);
     color: white;
-    position: relative;
 }
 input   ,select {
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
     padding-top: 20px;
     padding-right: 20px;
@@ -91,49 +73,12 @@ input   ,select {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.date      ,select,.submit, .car, .leaving1, .going1{
+.date     ,select,.submit, .car{
     width: 45%;
 }
 .submit {
     background-color: rgba(56,69,105,1.00);
     color: white;
-}
-.date1, .going, .leaving {
-    width: 30%;
-}
-#Tabs2  , #tabs-6, #tabs-7, #tabs-8{
-    margin-bottom: 0px;
-    border: none;
-    position: relative;
-    background-color: transparent;
-    background-image: none;
-}
-.flight {
-    margin-top: 10px;
-    /* [disabled]margin-right: 37px; */
-    /* [disabled]margin-left: 37px; */
-    /* [disabled]margin-bottom: 37px; */
-    padding: 0;
-    font-weight: bold;
-    color: white;
-    /* [disabled]text-align: left; */
-    position: relative;
-    left: auto;
-    right: 720px;
-}
-.economy {
-    position: absolute;
-    left: 480px;
-    width: 13%;
-    text-align: center;
-    border-radius: 50px;
-    margin: 0;
-    padding: 10px;
-    top: 5px;
-}
-#Tabs2 ul {
-    position: relative;
-    left: 100px;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -147,7 +92,7 @@ input   ,select {
 <header></header>
 <wrapper>
 	<div class="top">
-	<img src="logogif.gif" class="gif" width="200px">
+	<img src="logogif.gif" class="gif" width="100px">
 	<h1> Expedia</h1>
 	</div>
   <div id="Tabs1">
@@ -163,17 +108,7 @@ input   ,select {
       <li> <a href="#tabs-5"><img src="AdobeStock_576683102.png" alt="" width="713" height="746"><br>
       Activities</a></li>
     </ul>
-    
-<div id="tabs-1">
-	<div id="Tabs2">
-	  <ul>
-	    <li><a href="#tabs-6">Round Trip</a></li>
-	    <li><a href="#tabs-7">One way</a></li>
-        <li><a href="#tabs-8">Multi-city</a></li>
-</ul>
-	  <div id="tabs-6">
-	    <input type="text" class="leaving1" placeholder="Leaving from">
-		 <input type="text" class="going1" placeholder="Going to"> 
+    <div id="tabs-1"><input type="text" placeholder="Where to?">
      <input type="date" class="date">
      <input type="date" class="date">
 		<select>
@@ -184,52 +119,9 @@ input   ,select {
 		  <option value="4">4</option>
 		  <option value="5+">5+</option>
 		</select>
-	<input type="submit" class="submit" value="Find Your Flight">
-	    </div>
-	  <div id="tabs-7">
-	   <input type="text" class="leaving1" placeholder="Leaving from">
-		 <input type="text" class="going1"
-				placeholder="Going to">
-     <input type="date" class="date">
+		<input type="submit" class="submit" value="Search">
      
-		<select>
-		  <option value="0">Number of Travelers</option>
-		  <option value="1">1</option>
-		  <option value="2">2</option>
-		  <option value="3">3</option>
-		  <option value="4">4</option>
-		  <option value="5+">5+</option>
-		</select>
-	<input type="submit" class="submit" value="Find Your Flight">
-	    </div>
-      <div id="tabs-8">
-		  <p class="flight"> Flight 1</p>
-         <input type="text" class="leaving" placeholder="Leaving from">
-		  <input type="text" class="going" placeholder="Going to">
-		  
-     <input type="date" class="date1">
-		  <p class="flight"> Flight 2</p>
-		  <input type="text" class="leaving" placeholder="Leaving from">
-		  <input type="text" class="going" placeholder="Going to">
-     <input type="date" class="date1">
-		<select>
-		  <option value="0">Number of Travelers</option>
-		  <option value="1">1</option>
-		  <option value="2">2</option>
-		  <option value="3">3</option>
-		  <option value="4">4</option>
-		  <option value="5+">5+</option>
-		</select>
-	<input type="submit" class="submit" value="Find Your Flight">
-      </div>
-		<div><select class="economy">
-		  <option value="1">Economy</option>
-		  <option value="2">Premium Economy</option>
-		  <option value="3">Business Class</option>
-		  <option value="4">First Class</option>
-		</select></div>
-</div>
-</div>
+    </div>
     
     <div id="tabs-2"><input type="text" placeholder="Destination">
 		<input type="date" class="date">
@@ -340,15 +232,6 @@ input   ,select {
 <script type="text/javascript">
 $(function() {
 	$( "#Tabs1" ).tabs(); 
-});
-$(function() {
-	$( "#Tabs2" ).tabs(); 
-});
-$(function() {
-	$( "#Tabs2" ).tabs(); 
-});
-$(function() {
-	$( "#Tabs2" ).tabs(); 
 });
 </script>
 </body>
