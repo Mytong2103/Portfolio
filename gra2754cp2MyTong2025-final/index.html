@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ghost | 2025, My Tong</title>
+	<style>
+		body{
+	margin:0;
+	padding:0;
+	background-color:black;
+		}
+wrapper{
+	width:1366px;
+	height:768px;
+	margin:0 auto;
+	display:block;
+
+	}
+		header{
+	height:150px;
+	background-color: black;
+	}
+
+main{
+	text-align:center;
+	background-color:black;
+	padding: 1em 0;
+	margin: 0 auto;
+	
+	}
+footer{
+	display: block;
+	text-align: center;
+	height:150px;
+	width: 960px;
+	color: white;
+	background-color:black;
+	clear:both;
+	padding-left: 200px;
+	
+	}
+		#ghost-vanish {
+	animation: moving infinite 5s;
+}
+	@keyframes vanish{
+		0%{opacity:1;}
+			79%{opacity:1;}
+			80%{opacity:0;}
+			100%{opacity:0;}
+		}
+		#ghost-moving{
+			animation: vanish infinite 5s;
+			transform-origin: 49.71% 53.65%;
+		}
+		@keyframes moving{
+			0%{
+				transform: translateY(0);}
+			50%{
+				transform: translateY(50px);
+			}
+			60%{transform: translateY(1);
+					}
+			100%{transform: translateY(1);
+					}
+		
+		}
+		#ghost-scale{
+			animation: bigger infinite 5s;
+			transform-origin: 49.71% 53.65%;
+			
+		 }
+		@keyframes bigger{
+			0%{
+				transform: scale(0);
+			}
+			
+			60%{transform: scale(1);}
+		100%{transform: scale(1);}
+		}
+		#ghost-face{
+			animation: face infinite 5s;}
+		@keyframes face {
+			0%{opacity:0;}
+			79%{opacity:0;}
+			90%{opacity:1;}
+			100%{opacity:1;}
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+  <g id="background">
+    <rect width="1366" height="768"/>
+    <image width="600" height="480" transform="translate(203) scale(1.6)" xlink:href="background.jpeg"/>
+  </g>
+  <g id="ghost1-vanish">
+    <g id="ghost-moving">
+      <image id="ghost-scale" width="736" height="1265" transform="translate(625.42 307.22) scale(.18)" xlink:href="lady.png"/>
+    </g>
+  </g>
+  <g id="ghost-face">
+    <image id="ghostface" width="736" height="736" transform="translate(392.41 87.78) scale(.82 .92)" xlink:href="ghostface.png"/>
+  </g>
+</svg>
+
+<footer>&copy; 2025, My Tong. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.
+</footer>
+</body>
+</html>
