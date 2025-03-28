@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag and Drop Practice</title>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+body {
+	margin: 0;
+	background-image: url("crafts.jpeg");
+	background-repeat: no-repeat;
+	background-size: 2600px 1400px;
+}
+.faces {
+	margin: auto;
+	display: block;
+	width: 250px;
+	padding: 10px;
+	background-size: cover;
+}
+	.faces img{
+		width: 100px;
+		height: 100px;
+	}
+ #drop1,#drop2,#drop3,#drop4{
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    background-color: rgba(247,165,0,1.00);
+    border: thin solid rgba(247,165,0,1.00);
+	border-radius: 50%;
+    display: inline-block;
+    vertical-align:middle;
+    padding-top: 25px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	 position: relative;
+	 left: 700px;
+	 bottom: -100px;
+	 
+}
+	
+	.flower img{width: 720px;
+	height: 800px;
+	text-align: center;
+	display: inline-block;
+    vertical-align: top;
+    padding-top: 25px;
+	position: absolute;
+	left: 900px;}
+	.leaf{position: absolute;
+	top: 200px;
+		left: -50px;}
+	.thought{position: relative;
+	
+		right: 200px ;
+		
+	}
+	.thought img{height: 300px;
+	width: 340px;}
+	
+		
+
+
+</style>
+</head>
+
+<body>
+<wrapper class="flower">
+	<div id="drop0" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="Flower.gif" alt=""></div>
+	<div class="leaf"><img src="leaf.png" alt=""></div>
+	<div class="thought"><img src="thought .png" alt=""></div>
+</wrapper>
+<wrapper class="faces">
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="face1.png"  draggable="true" ondragstart="drag(event)" id="drag0" alt="" width="50" height="50" ></div>
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="face2.png" draggable="true" ondragstart="drag(event)" id="drag1" alt="" width="50" height="50" ></div>
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="face3.png
+	 " draggable="true" ondragstart="drag(event)" id="drag2" alt="" width="50" height="50" ></div>
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="face4.png" draggable="true" ondragstart="drag(event)" id="drag3" alt="" width="50" height="50" ></div>
+</wrapper>
+</body>
+</html>
